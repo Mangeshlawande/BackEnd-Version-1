@@ -1,0 +1,78 @@
+# Backend - Node JS Libuv and source code 
+
+   1. server :: is a software 
+   it's listen to specific port (35000 more in device ) 
+
+  1.1  nodeJS:: 
+  As an asynchronous event-driven JavaScript runtime, Node.js is designed to build scalable network applications. In the following "hello world" example, many connections can be handled concurrently.
+   Upon each connection, the callback is fired, but if there is no work to be done, Node.js will sleep.
+
+  #  npm (node package manager ):
+  
+
+
+
+
+
+
+  1.2 LibUV(library )::  
+
+  Overview
+libuv is a multi-platform support library with a focus on asynchronous I/O. It was primarily developed for use by Node.js, but it’s also used by Luvit, Julia, uvloop, and others.
+
+features::
+
+Full-featured event loop backed by epoll, kqueue, IOCP, event ports.
+
+Asynchronous TCP and UDP sockets
+
+Asynchronous DNS resolution
+
+Asynchronous file and file system operations
+
+File system events
+
+ANSI escape code controlled TTY
+
+IPC with socket sharing, using Unix domain sockets or named pipes (Windows)
+
+Child processes
+
+Thread pool
+
+Signal handling
+
+High resolution clock
+
+Threading and synchronization primitives
+
+
+
+
+
+
+   2. Database ::
+
+
+
+    3. API : 
+    API stands for Application Programming Interface, which is a set of rules and protocols that allow software applications to communicate with each other: 
+
+How APIs work
+
+APIs act as a contract between two applications, defining how they communicate with each other. 
+They allow products and services to communicate without the need to know how they are implemented. 
+
+Benefits of APIs
+
+APIs can simplify and speed up app development by allowing developers to integrate data and services from other applications. 
+They can also help application owners share data and functions with departments within their organization, or with business partners and third parties. 
+
+Security
+
+APIs are considered safe because they include authorization credentials and an API gateway to limit access. 
+Examples of APIs 
+Language bindings: Map the features and capabilities of one language to an interface implemented in another language. 
+Database APIs: Enable communication between an application and a database management system. 
+Financial market APIs: Interface trading algorithms or models and an exchange's and/or broker's platform.
+

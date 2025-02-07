@@ -1,0 +1,9 @@
+npm init 
+
+npm run start
+
+npm i express
+
+npm i -D nodemon
+
+npm run dev :: developement phase

@@ -1,0 +1,21 @@
+backend goal :: 
+    authentication, authorization 
+
+
+
+pre-requisites :: js foundations, 
+ 
+TOOLS:
+     postman 
+     vs-code 
+     helix 
+     zed 
+     warp :: 
+     API (postman);
+     
+
+
+
+
+
+

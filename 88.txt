@@ -1,0 +1,7 @@
+fs comse from require
+fs file system 
+
+craft the structure of application
+
+## Build a command line application 
+// interface not have defination 

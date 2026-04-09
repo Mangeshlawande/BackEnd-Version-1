@@ -20,7 +20,7 @@ cloudinary.config({
 
 const publishAVideo = asyncHandler(async (req, res) => {
   
-        const { title, description, duration } = req.body;
+        const { title, description } = req.body;
         // console.log("video[0]:",req.files.video[0]);
     // check whether the user is authenticated or not 
         if (!req.user || !isValidObjectId(req.user._id)) {
@@ -43,7 +43,7 @@ const publishAVideo = asyncHandler(async (req, res) => {
         }
 
         const videoLocalPath = req.files?.video[0]?.path
-    const thumbnailLocalPath = req.files?.thumbnail[0]?.path
+        const thumbnailLocalPath = req.files?.thumbnail[0]?.path
 
     if (!videoLocalPath) {
         throw new ApiError(400, "video file is missing ");
@@ -69,12 +69,11 @@ const publishAVideo = asyncHandler(async (req, res) => {
         throw new ApiError(500, "Failed to upload thumbnail ");
     }
 
-
    try {
      const newVideo = await Video.create({
          title,
          description,
-         duration,
+         duration: video.duration,
          video: video.url, // Save video URL
         thumbnail: thumbnail.url || "", // Save thumbnail URL
         owner: req.user._id, // Assuming JWT is being used for user authentication

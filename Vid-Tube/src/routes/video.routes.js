@@ -21,13 +21,13 @@ const router = Router();
 router.post(
     "/publish-video",
     upload.fields([
-        { 
+        {
             name: "video",
-             maxCount: 1 
-            }, // Single video file
-        { 
-            name: "thumbnail", 
-            maxCount: 1 
+            maxCount: 1
+        }, // Single video file
+        {
+            name: "thumbnail",
+            maxCount: 1
         }, // Single thumbnail image
     ]),
     verifyJWT, // Ensure the user is authenticated

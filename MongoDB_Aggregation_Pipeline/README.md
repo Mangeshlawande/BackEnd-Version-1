@@ -10,7 +10,7 @@
       isActive: true
     }},
     {
-    $count: 'activeUsers'
+    $count: "activeUsers"
     }]
 
 ```
@@ -251,7 +251,8 @@
 ```
 ## 14. Find users who have both 'enim' and 'ad' as their tags ??
 
-* $all operator select rhe document where the value of fieldis an array that contain specified element 
+* $all operator select rhe document where the value of fieldis an array that contain specified element .
+
 ```json
         [
         {
@@ -321,9 +322,8 @@
         author_details:{
             $arrayElemAt:["$author_details", 0]
         }
-        }
+    }
     },
-    
     ]
 ```
 
